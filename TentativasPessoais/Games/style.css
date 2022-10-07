@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700&family=Silkscreen&display=swap');
+
+:root{
+    --preto: #0A0F0D;
+    --violeta: #2A1E5C;
+    --laranja: #EE7B30;
+    --prata: #C4CBCA;
+    --verde: #4D8B31;
+
+    --fonteDestaque: 'Silkscreen', cursive;
+    --fontePadrao: 'Inconsolata', monospace;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--verde);
+}
+
+header{
+    position: relative;
+    height: 150px;
+    background-image: linear-gradient(to bottom, var(--prata), var(--preto));
+}
+
+header > h1{
+    margin: auto;
+    text-align: center;
+    padding: 35px 0px;
+    color: var(--violeta);
+}
+
+header > img{
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    border-radius: 50%;
+}
+
+nav{
+    display: flex;
+    position:fixed;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0px auto 0px;
+    width: 100px;
+    height: 200px;
+    background-color:white;
+}
+
+nav > div > ul{
+    display: flex;
+    list-style: none;
+    list-style-position: inside;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    padding-left: 5px;
+}
+
+nav > div > ul > li > a{
+    color: var(--preto);
+    font-family: var(--fontePadrao);
+}
+
+main{
+    background-color: var(--prata);
+    margin:auto;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+main p{
+    font-family: var(--fontePadrao);
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 15px 5px;
+    text-indent: 30px;
+}
+
+main h1{
+    font-family: var(--fonteDestaque);
+    text-align: center;
+}
+
+main h2{
+    padding: 10px 10px;
+    font-family: var(--fonteDestaque);
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: var(--laranja);
+}
+
+footer > p > strong{
+    color: white;
+}
